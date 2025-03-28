@@ -1,0 +1,37 @@
+{
+  "name": "rest-generate",
+  "version": "1.0.0",
+  "description": "A CLI tool to quickly scaffold Node.js REST API projects",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "rest-generate": "./bin/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "prepublish": "npm run build",
+    "test": "echo \"No tests configured\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@inquirer/prompts": "^7.4.0",
+    "@types/node": "^22.13.14",
+    "chalk": "^5.4.1",
+    "commander": "^13.1.0",
+    "ejs": "^3.1.10",
+    "fs-extra": "^11.3.0",
+    "inquirer": "^9.3.7",
+    "typescript": "^5.8.2"
+  },
+  "devDependencies": {
+    "@types/ejs": "^3.1.5",
+    "@types/fs-extra": "^11.0.4",
+    "@types/inquirer": "^9.0.7",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0"
+  }
+}
